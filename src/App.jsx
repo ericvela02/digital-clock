@@ -1,33 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'
+import Clock from './components/Clock'
+import SettingsFooter from './components/SettingsFooter'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [font, setFont] = useState("Space Mono")
+  const [fontColor, setFontColor] = useState("white")
+  const [fontSize, setFontSize] = useState(10)
+  const [backgroundColor, setBackgroundColor] = useState("black")
+  const [backgroundImage, setBackgroundImage] = useState("")
+  const [background, setBackground] = useState("color")
+  const [showDate, setShowDate] = useState(true)
+  const [showAMPM, setShowAMPM] = useState(true)
+  const [showSeconds, setShowSeconds] = useState(true)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="background" style={{ background: background }}>
+        {background === "color"
+          ? <div className="background-color" style={{ backgroundColor: backgroundColor }}></div>
+          : <img className="background-image" src={backgroundImage} alt="background" />
+        }
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Clock
+        font={font} 
+        fontColor={fontColor} 
+        fontSize={fontSize} 
+        background={background} 
+        showDate={showDate} 
+        showAMPM={showAMPM} 
+        showSeconds={showSeconds}
+      />
+      <SettingsFooter
+        font={font} 
+        setFont={setFont} 
+        fontColor={fontColor} 
+        setFontColor={setFontColor} 
+        fontSize={fontSize} 
+        setFontSize={setFontSize} 
+        background={background} 
+        setBackground={setBackground} 
+        showDate={showDate} 
+        setShowDate={setShowDate} 
+        showAMPM={showAMPM} 
+        setShowAMPM={setShowAMPM} 
+        showSeconds={showSeconds} 
+        setShowSeconds={setShowSeconds}
+      />
     </>
   )
 }

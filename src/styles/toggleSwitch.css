@@ -1,0 +1,40 @@
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: auto;
+    outline: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.label-container {
+    outline: 1px solid red;
+}
+
+.label{
+    color: white;
+    font-size: 0.9rem;
+}
+
+.label:before{
+
+}
+
+input:checked + .label{
+
+}
+
+input:focus + .label{
+    
+}
+
+input:checked + .label:before{
+
+}
