@@ -8,7 +8,7 @@ function App() {
   const [font, setFont] = useState("Space Mono, monospace")
   const [fontColor, setFontColor] = useState("white")
   const [fontSize, setFontSize] = useState(10)
-  const [backgroundColor, setBackgroundColor] = useState("black")
+  const [backgroundColor, setBackgroundColor] = useState("#0D0D0D")
   const [backgroundImage, setBackgroundImage] = useState("")
   const [background, setBackground] = useState("color")
   const [showDate, setShowDate] = useState(false)

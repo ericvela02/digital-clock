@@ -43,7 +43,7 @@ function SettingsFooter(props) {
 
     const colorOptions = [
         {name: "White", value: "#E9E9E9"},
-        {name: "Black", value: "#0D0D0D"},
+        {name: "Black", value: "#292929"},
         {name: "Red", value: "#D63D3D"},
         {name: "Orange", value: "#DE7B42"},
         {name: "Yellow", value: "#ECDF6D"},
