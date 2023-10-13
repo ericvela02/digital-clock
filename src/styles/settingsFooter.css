@@ -1,11 +1,22 @@
 .settings-footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 25vw;
+    width: 50%;
     height: 10rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.settings-container {
+    position: absolute;
+    bottom: -10rem;
+    transition: bottom 0.3s ease-in-out;
+    padding: 1rem;
+}
+
+.settings-footer:hover .settings-container {
+    bottom: 0;
 }

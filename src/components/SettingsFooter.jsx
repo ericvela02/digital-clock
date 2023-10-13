@@ -18,9 +18,11 @@ function SettingsFooter(props) {
 
   return (
     <div className="settings-footer">
-        <ToggleSwitch label={"AM/PM"} onChange={handleShowAMPMToggle} checked={props.showAMPM} width={"5rem"} height={"2rem"}/>
-        <ToggleSwitch label={"Seconds"} onChange={handleShowSecondsToggle} checked={props.showSeconds} width={"5.5rem"} height={"2rem"}/>
-        <ToggleSwitch label={"Date"} onChange={handleShowDateToggle} checked={props.showDate} width={"5rem"} height={"2rem"}/>
+        <div className="settings-container">
+            <ToggleSwitch label={"AM/PM"} onChange={handleShowAMPMToggle} checked={props.showAMPM} width={"5rem"} height={"2rem"}/>
+            <ToggleSwitch label={"Seconds"} onChange={handleShowSecondsToggle} checked={props.showSeconds} width={"5.5rem"} height={"2rem"}/>
+            <ToggleSwitch label={"Date"} onChange={handleShowDateToggle} checked={props.showDate} width={"5rem"} height={"2rem"}/>
+        </div>
     </div>
   )
 }
