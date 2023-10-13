@@ -1,6 +1,6 @@
 # digital-clock
 
-![Digital Clock Screenshot](path_to_screenshot.png)
+![Digital Clock Screenshot](https://i.imgur.com/CvwzHyL.png)
 
 A minimalistic, fullscreen digital clock that displays the current time. Designed with aesthetics in mind, this web app provides a clear and clean digital readout that's perfect for any setting.
 
