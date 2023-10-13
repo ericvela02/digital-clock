@@ -2,39 +2,51 @@
     position: relative;
     display: inline-block;
     width: fit-content;
-    height: auto;
-    outline: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1rem;
+    height: fit-content;
     font-family: 'Space Grotesk', sans-serif;
 }
 
+.toggle-switch * {
+    cursor: pointer;
+}
+
 .toggle-switch input {
+    position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
 
 .label-container {
-    outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 1.5rem;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .label{
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
+    font-weight: 200;
+    transition: all 0.3s ease;
 }
 
-.label:before{
-
+.toggle-switch input:checked + .label-container {
+    outline: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.3);
 }
 
-input:checked + .label{
-
+.toggle-switch input:checked + .label-container .label {
+    color: rgba(255, 255, 255, 1);
 }
 
-input:focus + .label{
-    
+.toggle-switch:hover .label-container {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-input:checked + .label:before{
-
+.toggle-switch:hover .label {
+    color: rgba(255, 255, 255, 0.8);  /* Slightly brighten the text on hover */
 }

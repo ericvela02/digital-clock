@@ -1,12 +1,21 @@
-import React from 'react'
+import React, {  useState } from 'react'
 import '../styles/toggleSwitch.css'
 
 function ToggleSwitch(props) {
+
+    const [checked, setChecked] = useState(props.checked)
+
+    function handleClick() {
+        setChecked(prev => !prev)
+        if (props.onChange) {
+            props.onChange(!checked)
+        }
+    }
     return (
-        <div className="toggle-switch">
-            <input type="checkbox" checked={props.checked} onChange={props.onChange} />
+        <div className="toggle-switch" onClick={handleClick}>
+            <input type="checkbox" checked={checked} readOnly />
             <div className="label-container">
-                <label>{props.label}</label>
+                <label className='label'>{props.label}</label>
             </div>
         </div>
     )

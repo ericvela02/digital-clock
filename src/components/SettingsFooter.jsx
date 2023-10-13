@@ -18,7 +18,7 @@ function SettingsFooter(props) {
 
   return (
     <div className="settings-footer">
-        <ToggleSwitch label={"AM/PM"} onChange={handleShowAMPMToggle} />
+        <ToggleSwitch label={"AM/PM"} onChange={handleShowAMPMToggle} checked={props.showAMPM}/>
     </div>
   )
 }
