@@ -6,7 +6,7 @@ import '../styles/settingsFooter.css'
 
 function SettingsFooter(props) {
 
-    const devMode = true // REMOVE IN FINAL
+    const devMode = 0 // REMOVE IN FINAL
 
     function handleShowAMPMToggle() {
         props.setShowAMPM(!props.showAMPM)
@@ -42,15 +42,15 @@ function SettingsFooter(props) {
     ]
 
     const colorOptions = [
-        {name: "White", value: "white"},
-        {name: "Black", value: "black"},
-        {name: "Red", value: "red"},
-        {name: "Orange", value: "orange"},
-        {name: "Yellow", value: "yellow"},
-        {name: "Green", value: "green"},
-        {name: "Blue", value: "blue"},
-        {name: "Purple", value: "purple"},
-        {name: "Pink", value: "pink"},
+        {name: "White", value: "#E9E9E9"},
+        {name: "Black", value: "#0D0D0D"},
+        {name: "Red", value: "#D63D3D"},
+        {name: "Orange", value: "#DE7B42"},
+        {name: "Yellow", value: "#ECDF6D"},
+        {name: "Green", value: "#6CC26A"},
+        {name: "Cyan", value: "#6AE0E8"},
+        {name: "Blue", value: "#3D59ED"},
+        {name: "Magenta", value: "#7145B8"},
     ]
 
   return (
