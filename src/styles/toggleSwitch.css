@@ -48,5 +48,5 @@
 }
 
 .toggle-switch:hover .label {
-    color: rgba(255, 255, 255, 0.8);  /* Slightly brighten the text on hover */
+    color: rgba(255, 255, 255, 0.8);
 }

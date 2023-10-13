@@ -1,0 +1,61 @@
+.triple-select-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 1rem;
+}
+
+.triple-select-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 200;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.triple-select-button-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 200;
+    width: 4rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.triple-select-button-option.selected {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.triple-select-button:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.triple-select-button-option:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.triple-select-button-option.small.selected {
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.triple-select-button-option.big.selected {
+    border-radius: 0 1.5rem 1.5rem 0;
+}

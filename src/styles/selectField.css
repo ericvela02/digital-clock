@@ -1,0 +1,38 @@
+.select-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 1rem;
+}
+
+.select-field-label {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.75rem;
+    font-weight: 200;
+    transition: all 0.3s ease;
+}
+
+.select-field-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 200;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+    width: 8rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.select-field-button:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
