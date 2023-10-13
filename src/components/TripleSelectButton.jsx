@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/tripleSelectButton.css'
 
 function TripleSelectButton(props) {
 
-    const [option, setOption] = useState(0)
+    const [option, setOption] = useState(1)
+
+    useEffect(() => {
+        if (props.onChange) {
+            props.onChange(5 * (option + 1))
+        }
+    }, [option])
 
     function handleChangeOption(index) {
         setOption(index)

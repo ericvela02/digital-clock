@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/clock.css'
 
-function Clock({ font, fontColor, fontSize, background, showDate, showAMPM, showSeconds }) {
+function Clock({ font, fontColor, fontSize, showDate, showAMPM, showSeconds }) {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -14,7 +14,7 @@ function Clock({ font, fontColor, fontSize, background, showDate, showAMPM, show
 
   return (
     <div className="clock-container">
-        <div className="clock" style={{ fontFamily: font, color: fontColor }}>
+        <div className="clock" style={{ fontFamily: font, color: fontColor, fontSize: `${fontSize}rem` }}>
             {showSeconds
               ? time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: showAMPM })
               : time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: showAMPM})}

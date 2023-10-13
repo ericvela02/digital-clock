@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/selectField.css'
 
 function SelectField(props) {
 
     const [option, setOption] = useState(0)
+
+    useEffect(() => {
+        if (props.onChange) {
+            props.onChange(props.options[option].value)
+        }
+    }, [option])
 
     function increment() {
         if (option < props.options.length - 1) {

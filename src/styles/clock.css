@@ -7,8 +7,8 @@
 }
 
 .clock {
-    font-size: 10rem;
     font-family: 'Space Mono', monospace;
+    transition: all 0.3s ease;
 }
 
 .date.inactive {

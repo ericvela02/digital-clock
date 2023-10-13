@@ -20,11 +20,25 @@ function SettingsFooter(props) {
         props.setShowDate(!props.showDate)
     }
 
+    function handleChangeFont(font) {
+        props.setFont(font)
+    }
+
+    function handleChangeFontColor(color) {
+        props.setFontColor(color)
+    }
+
+    function handleChangeFontSize(size) {
+        props.setFontSize(size)
+    }
+
     const fontOptions = [
         {name: "Space Mono", value: "Space Mono, monospace"},
         {name: "Roboto Mono", value: "Roboto Mono, monospace"},
         {name: "IBM Plex Mono", value: "IBM Plex Mono, monospace"},
-        {name: "Fira Mono", value: "Fira Mono, monospace"},
+        {name: "Ubuntu Mono", value: "Ubuntu Mono, monospace"},
+        {name: "Major Mono", value: "Major Mono Display, monospace"},
+        {name: "Sono", value: "Sono, monospace"},
     ]
 
     const colorOptions = [
@@ -47,12 +61,14 @@ function SettingsFooter(props) {
                     label={"Font"}
                     options={fontOptions}
                     type={"font"}
+                    onChange={handleChangeFont}
                 />
-                <TripleSelectButton />
+                <TripleSelectButton onChange={handleChangeFontSize}/>
                 <SelectField 
                     label={"Font Color"}
                     options={colorOptions}
                     type={"color"}
+                    onChange={handleChangeFontColor}
                 />
             </div>
             <div className="toggles">

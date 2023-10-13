@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  const [font, setFont] = useState("Space Mono")
+  const [font, setFont] = useState("Space Mono, monospace")
   const [fontColor, setFontColor] = useState("white")
   const [fontSize, setFontSize] = useState(10)
   const [backgroundColor, setBackgroundColor] = useState("black")
@@ -24,12 +24,11 @@ function App() {
         }
       </div>
       <Clock
-        font={font} 
-        fontColor={fontColor} 
-        fontSize={fontSize} 
-        background={background} 
-        showDate={showDate} 
-        showAMPM={showAMPM} 
+        font={font}
+        fontColor={fontColor}
+        fontSize={fontSize}
+        showDate={showDate}
+        showAMPM={showAMPM}
         showSeconds={showSeconds}
       />
       <SettingsFooter
