@@ -4,6 +4,7 @@
     width: fit-content;
     height: fit-content;
     font-family: 'Space Grotesk', sans-serif;
+    margin: 1rem;
 }
 
 .toggle-switch * {
@@ -20,8 +21,7 @@
 .label-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
+    justify-content: center;
     transition: all 0.3s ease;
     border-radius: 1.5rem;
     outline: 2px solid rgba(255, 255, 255, 0.2);

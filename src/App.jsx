@@ -11,7 +11,7 @@ function App() {
   const [backgroundColor, setBackgroundColor] = useState("black")
   const [backgroundImage, setBackgroundImage] = useState("")
   const [background, setBackground] = useState("color")
-  const [showDate, setShowDate] = useState(true)
+  const [showDate, setShowDate] = useState(false)
   const [showAMPM, setShowAMPM] = useState(true)
   const [showSeconds, setShowSeconds] = useState(true)
 

@@ -19,6 +19,9 @@ function Clock({ font, fontColor, fontSize, background, showDate, showAMPM, show
               ? time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: showAMPM })
               : time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: showAMPM})}
         </div>
+        <div className={showDate ? "date" : "date inactive"} style={{ fontFamily: font, color: fontColor }}>
+              {time.toLocaleDateString([], { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+        </div>
     </div>
   );
 }
