@@ -6,6 +6,8 @@ import '../styles/settingsFooter.css'
 
 function SettingsFooter(props) {
 
+    const devMode = true // REMOVE IN FINAL
+
     function handleShowAMPMToggle() {
         props.setShowAMPM(!props.showAMPM)
     }
@@ -39,7 +41,7 @@ function SettingsFooter(props) {
 
   return (
     <div className="settings-footer">
-        <div className="settings-container">
+        <div className="settings-container" style={ devMode ? {bottom: "0"} : {} }>
             <div className="selects">
                 <SelectField 
                     label={"Font"}
@@ -59,7 +61,7 @@ function SettingsFooter(props) {
                 <ToggleSwitch label={"Date"} onChange={handleShowDateToggle} checked={props.showDate} width={"5rem"} height={"2rem"}/>
             </div>
             <div className="background-button-container">
-                <button className="background-button" onClick={props.handleBackgroundClick}>Background</button>
+                <button className="background-button">Background</button>
             </div>
         </div>
     </div>
