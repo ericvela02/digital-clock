@@ -5,8 +5,6 @@
     width: 50%;
     height: 10rem;
 
-    outline: 1px solid red;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +12,7 @@
 
 .settings-container {
     position: absolute;
-    bottom: -10rem;
+    bottom: -15rem;
     transition: bottom 0.3s ease-in-out;
     padding: 1rem;
     display: flex;
