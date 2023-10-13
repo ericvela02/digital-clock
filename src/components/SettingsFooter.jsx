@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import ToggleSwitch from './ToggleSwitch'
 import SelectField from './SelectField'
 import TripleSelectButton from './TripleSelectButton'
+import ChooseBackground from './ChooseBackground'
 import '../styles/settingsFooter.css'
 
 function SettingsFooter(props) {
 
-    const devMode = 0 // REMOVE IN FINAL
+    const devMode = 1 // REMOVE IN FINAL
+
+    const [showBackgroundSettings, setShowBackgroundSettings] = useState(false)
 
     function handleShowAMPMToggle() {
         props.setShowAMPM(!props.showAMPM)
@@ -30,6 +33,10 @@ function SettingsFooter(props) {
 
     function handleChangeFontSize(size) {
         props.setFontSize(size)
+    }
+
+    function handleToggleBackgroundSettings() {
+       setShowBackgroundSettings(!showBackgroundSettings)
     }
 
     const fontOptions = [
@@ -77,8 +84,17 @@ function SettingsFooter(props) {
                 <ToggleSwitch label={"Date"} onChange={handleShowDateToggle} checked={props.showDate} width={"5rem"} height={"2rem"}/>
             </div>
             <div className="background-button-container">
-                <button className="background-button">Background</button>
+                <button
+                    className="background-button"
+                    onClick={handleToggleBackgroundSettings}
+                >
+                    Background
+                </button>
             </div>
+            <ChooseBackground
+                active={showBackgroundSettings}
+                close={handleToggleBackgroundSettings}
+            />
         </div>
     </div>
   )
