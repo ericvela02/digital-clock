@@ -91,10 +91,7 @@ function SettingsFooter(props) {
                         Background
                     </button>
                 </div>
-                <ChooseBackground
-                    active={showBackgroundSettings}
-                    close={handleToggleBackgroundSettings}
-                />
+                <ChooseBackground open={showBackgroundSettings} close={setShowBackgroundSettings} backgroundColor={props.backgroundColor} />
             </div>
         </div>
     )

@@ -3,14 +3,18 @@ import '../styles/chooseBackground.css'
 
 function ChooseBackground(props) {
 
+    function toggleClose() {
+        props.close(false)
+    }
+
     return (
-        <div className="choose-background" style={ props.active ? {top: 0} : {}}>
-            <div className="background-color-options">
-                <div className="color-option" style={{backgroundColor: "#CBC9BC"}}>{""}</div>
-                <div className="color-option" style={{backgroundColor: "#0D0D0D"}}>{""}</div>
+        <div className='choose-background-container' style={props.open ? { bottom: 0, background: "transparent" } : { background: props.backgroundColor }}>
+            <div className='choose-background-options'>
+                <button>White</button>
+                <button>Black</button>
             </div>
-            <div className="close-choose-background" onClick={props.close}>Close</div>
-        </div>
+            <button onClick={toggleClose}>Close</button>
+        </ div >
     )
 }
 

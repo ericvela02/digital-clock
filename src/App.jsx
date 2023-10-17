@@ -32,20 +32,22 @@ function App() {
         showSeconds={showSeconds}
       />
       <SettingsFooter
-        font={font} 
-        setFont={setFont} 
-        fontColor={fontColor} 
-        setFontColor={setFontColor} 
-        fontSize={fontSize} 
-        setFontSize={setFontSize} 
-        background={background} 
-        setBackground={setBackground} 
-        showDate={showDate} 
-        setShowDate={setShowDate} 
-        showAMPM={showAMPM} 
-        setShowAMPM={setShowAMPM} 
-        showSeconds={showSeconds} 
+        font={font}
+        setFont={setFont}
+        fontColor={fontColor}
+        setFontColor={setFontColor}
+        fontSize={fontSize}
+        setFontSize={setFontSize}
+        background={background}
+        setBackground={setBackground}
+        showDate={showDate}
+        setShowDate={setShowDate}
+        showAMPM={showAMPM}
+        setShowAMPM={setShowAMPM}
+        showSeconds={showSeconds}
         setShowSeconds={setShowSeconds}
+        backgroundColor={backgroundColor}
+        setBackgroundColor={setBackgroundColor}
       />
     </>
   )
