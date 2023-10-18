@@ -7,7 +7,7 @@ import '../styles/settingsFooter.css'
 
 function SettingsFooter(props) {
 
-    const devMode = 1 // REMOVE IN FINAL
+    const devMode = 0 // REMOVE IN FINAL
 
     const [showBackgroundSettings, setShowBackgroundSettings] = useState(false)
 

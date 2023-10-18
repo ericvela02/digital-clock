@@ -13,7 +13,7 @@
 .settings-container {
     position: absolute;
     bottom: -15rem;
-    transition: bottom 0.3s ease-in-out;
+    transition: bottom 0.4s ease-in-out;
     padding: 1rem;
     display: flex;
     flex-direction: column;
