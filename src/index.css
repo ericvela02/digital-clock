@@ -15,6 +15,30 @@
     -ms-user-select: none; /* IE/Edge */
 }
 
+:root {
+    --primary-bg: #0D0D0D;
+    --primary-text: rgba(255, 255, 255, 0.7);
+    --primary-outline: rgba(255, 255, 255, 0.2);
+    --selected-color: rgba(255, 255, 255, 1);
+    --hover-shadow: rgba(255, 255, 255, 0.5);
+    --hover-text: rgba(255, 255, 255, 0.8);
+    --label-text: rgba(255, 255, 255, 0.4);
+    --toggle-glow: rgba(255, 255, 255, 0.3);
+    --triple-select-highlight: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] {
+    --primary-bg: #CBC9BC;
+    --primary-text: rgba(0, 0, 0, 0.7);
+    --primary-outline: rgba(0, 0, 0, 0.2);
+    --selected-color: rgba(0, 0, 0, 1);
+    --hover-shadow: rgba(0, 0, 0, 0.5);
+    --hover-text: rgba(0, 0, 0, 0.8);
+    --label-text: rgba(0, 0, 0, 0.4);
+    --toggle-glow: rgba(0, 0, 0, 0.3);
+    --triple-select-highlight: rgba(0, 0, 0, 0.05);
+}
+
 body {
     line-height: 1.5;
 }

@@ -54,14 +54,14 @@
     justify-content: center;
     transition: all 0.3s ease;
     border-radius: 1.5rem;
-    outline: 2px solid rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.7);
+    outline: 2px solid var(--primary-outline);
+    color: var(--primary-text);
     font-size: 0.9rem;
     font-weight: 200;
     cursor: pointer;
 }
 
 .background-button:hover {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px var(--hover-shadow);
+    color: var(--hover-text);
 }

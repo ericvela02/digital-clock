@@ -8,14 +8,13 @@ function App() {
   const [font, setFont] = useState("Space Mono, monospace")
   const [fontColor, setFontColor] = useState("white")
   const [fontSize, setFontSize] = useState(10)
-  const [backgroundColor, setBackgroundColor] = useState("#0D0D0D")
   const [showDate, setShowDate] = useState(false)
   const [showAMPM, setShowAMPM] = useState(true)
   const [showSeconds, setShowSeconds] = useState(true)
 
   return (
     <>
-      <div className="background" style={{ background: backgroundColor, transition: "all 0.3s ease-in-out"}}></div>
+      <div className="background" />
       <Clock
         font={font}
         fontColor={fontColor}
@@ -37,8 +36,6 @@ function App() {
         setShowAMPM={setShowAMPM}
         showSeconds={showSeconds}
         setShowSeconds={setShowSeconds}
-        backgroundColor={backgroundColor}
-        setBackgroundColor={setBackgroundColor}
       />
     </>
   )

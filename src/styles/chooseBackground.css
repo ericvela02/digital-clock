@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem;
+    background-color: var(--primary-bg);
 }
 
 .choose-background-options {
@@ -34,22 +35,23 @@
     justify-content: center;
     transition: all 0.3s ease;
     border-radius: 1.5rem;
-    outline: 2px solid rgba(255, 255, 255, 0.2);
-    color: rgba(255, 255, 255, 0.7);
+    outline: 2px solid var(--primary-outline);
+    color: var(--primary-text);
     font-size: 0.9rem;
     font-weight: 200;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .choose-background-button:hover {
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px var(--hover-shadow);
+    color: var(--hover-text);
 }
 
 .choose-background-button.white:after {
     content: 'Light';
     position: relative;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--label-text);
     font-size: 0.8rem;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 200;
@@ -63,7 +65,7 @@
 .choose-background-button.black:after {
     content: 'Dark';
     position: relative;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--label-text);
     font-size: 0.8rem;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 200;

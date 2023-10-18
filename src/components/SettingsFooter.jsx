@@ -95,8 +95,6 @@ function SettingsFooter(props) {
             <ChooseBackground
                 open={showBackgroundSettings}
                 close={setShowBackgroundSettings}
-                backgroundColor={props.backgroundColor}
-                setBackgroundColor={props.setBackgroundColor}
             />
         </div>
     )
