@@ -1,18 +1,75 @@
 .choose-background-container {
     position: absolute;
     bottom: -15rem;
-    transition: bottom 0.5s ease-in-out;
+    transition: bottom 0.7s, background-color 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 140%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.choose-background-options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.choose-background-button {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 1rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 1.5rem;
+    outline: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.choose-background-button:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.choose-background-button.white:after {
+    content: 'Light';
+    position: relative;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    transition: all 0.3s ease;
+    top: -1.1rem;
+    left: 0;
     width: 100%;
     height: 100%;
 }
 
-.choose-background-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.choose-background-button.black:after {
+    content: 'Dark';
+    position: relative;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    transition: all 0.3s ease;
+    top: -1.1rem;
+    left: 0;
     width: 100%;
     height: 100%;
 }

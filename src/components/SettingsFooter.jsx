@@ -7,7 +7,7 @@ import '../styles/settingsFooter.css'
 
 function SettingsFooter(props) {
 
-    const devMode = 0 // REMOVE IN FINAL
+    const devMode = 1 // REMOVE IN FINAL
 
     const [showBackgroundSettings, setShowBackgroundSettings] = useState(false)
 
@@ -91,8 +91,13 @@ function SettingsFooter(props) {
                         Background
                     </button>
                 </div>
-                <ChooseBackground open={showBackgroundSettings} close={setShowBackgroundSettings} backgroundColor={props.backgroundColor} />
             </div>
+            <ChooseBackground
+                open={showBackgroundSettings}
+                close={setShowBackgroundSettings}
+                backgroundColor={props.backgroundColor}
+                setBackgroundColor={props.setBackgroundColor}
+            />
         </div>
     )
 }
