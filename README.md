@@ -10,20 +10,12 @@ A minimalistic, fullscreen digital clock that displays the current time. Designe
 - **Modern Design**: Sleek and stylish digital clock design.
 - **Lightweight**: No unnecessary frills—just the time.
 
-## Table of Contents 📖
-
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Customization](#customization)
-4. [Contributing](#contributing)
-5. [License](#license)
-
 ## Installation 🛠
 
 1. **Clone the Repository**
 
    ```bash
-   git clone <repository_link>
+   git clone https://github.com/ericvela02/digital-clock.git
     ```
 
 2. **Open the Project**
@@ -45,13 +37,20 @@ A minimalistic, fullscreen digital clock that displays the current time. Designe
    ```
 
 ## Usage 💡
-To simply view the clock, open the app in your preferred browser. The time should be displayed in a large digital format.
+To simply view the clock, open the app in your preferred browser by going to "http://localhost:5173/". The time should be displayed in a large digital format.
 
 ## Customization 🎨
-The design is kept minimalistic, but if you'd like to customize the colors, fonts, or any other styles, you can modify the relevant files in the styles/ directory. [Provide more customization details or tips if needed.]
+A pop-up menu at the bottom of the page allows for multiple levels of customization. The following options are available:
+- **Time Font**: Choose between 6 sleek fonts.
+- **Time Font Size**: Choose between a small, medium, or large font size.
+- **Time Font Color**: Choose between 9 vibrant font colors.
+- **Time Format**: Choose between 12-hour and 24-hour time formats.
+- **Seconds Display**: Choose whether or not to display seconds.
+- **Date Display**: Choose whether or not to display the date.
+- **Background Color**: Choose between a light or dark background color.
 
 ## Contributing 🤝
-We welcome contributions! If you find any bugs, have feature suggestions, or would like to make improvements, feel free to fork this repository and submit a pull request.
+This project is open to contributions! If you find any bugs, have feature suggestions, or would like to make improvements, feel free to fork this repository and submit a pull request.
 
 ## License 📜
 This project is licensed under the MIT License. For more information, please refer to the [LICENSE](LICENSE) file.
