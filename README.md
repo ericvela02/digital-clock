@@ -37,7 +37,7 @@ A minimalistic, fullscreen digital clock that displays the current time. Designe
    ```
 
 ## Usage 💡
-To simply view the clock, open the app in your preferred browser by going to "http://localhost:5173/". The time should be displayed in a large digital format.
+To simply view the clock, open the app in your preferred browser by going to "http://localhost:5173/", or view the project in this [sandbox](https://codesandbox.io/s/digital-clock-fztpws). The time should be displayed in a large digital format.
 
 ## Customization 🎨
 A pop-up menu at the bottom of the page allows for multiple levels of customization. The following options are available:
