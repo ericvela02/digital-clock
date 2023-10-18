@@ -24,7 +24,7 @@
 
 .choose-background-button {
     font-family: 'Space Grotesk', sans-serif;
-    margin: 1rem;
+    margin: 0.1rem 1rem;
     text-decoration: none;
     background: none;
     border: none;
@@ -48,13 +48,29 @@
     color: var(--hover-text);
 }
 
-.choose-background-button.white:after {
+.choose-background-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 1rem;
+}
+
+.choose-background-button-label {
+    color: var(--label-text);
+    font-size: 0.75rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+/* .choose-background-button.white:after {
     content: 'Light';
     position: relative;
     color: var(--label-text);
     font-size: 0.8rem;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     transition: all 0.3s ease;
     top: -1.1rem;
     left: 0;
@@ -68,10 +84,10 @@
     color: var(--label-text);
     font-size: 0.8rem;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     transition: all 0.3s ease;
     top: -1.1rem;
     left: 0;
     width: 100%;
     height: 100%;
-}
+} */

@@ -35,12 +35,12 @@
 }
 
 .toggle-switch input:checked + .label-container {
-    outline: 2px solid var(--selected-color);
+    outline: 2px solid var(--selected-outline);
     box-shadow: 0 0 15px 2px var(--toggle-glow);
 }
 
 .toggle-switch input:checked + .label-container .label {
-    color: var(--selected-color);
+    color: var(--selected-text);
 }
 
 .toggle-switch:hover .label-container {

@@ -40,7 +40,7 @@
 }
 
 .triple-select-button-option.selected {
-    color: var(--selected-color);
+    color: var(--selected-text);
     background-color: var(--triple-select-highlight);
 }
 
